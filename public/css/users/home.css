@@ -1,0 +1,57 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.bg{
+  position: relative;
+  display: grid;
+  height: 100%;
+}
+.img-bg{
+  position: relative;
+  max-width: 100%;
+  max-height: 140%;
+  margin: auto;
+}
+.img-logo{
+  position: absolute;
+  max-width: 300px;
+  max-height: 300px
+}
+.bg-txt{
+  color: black;
+  position: absolute;
+  top:200px
+  left:500px
+}
+.btn{
+  position: absolute;
+  background-color: rgb(59, 110, 36);
+	color: black;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	transition: .2s all;
+  top:500px;
+  left:500px;
+}
+.Rbtn{
+  position: absolute;
+  background-color: rgb(59, 110, 36);
+	color: black;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 20%;
+	transition: .2s all;
+  top:600px;
+  left:400px;
+}
+.btn:hover, .Rbtn:hover{
+	background-color: rgb(34, 75, 15);
+	border-radius: 5px;
+}
