@@ -1,7 +1,5 @@
 <?php
 
-
-// test comment
     class Customer extends Controller
     {
         public function __construct()
