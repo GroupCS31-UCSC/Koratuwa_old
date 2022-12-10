@@ -22,28 +22,44 @@
 
 .logo {
   position: absolute;
-  top: 40px;
-  left: 17px;
+  top: 20px;
 }
 
 .logo img {
-  width: 580px;
-  height: 640px;
+  width: 550px;
+  height: 600px;
   border-radius: 50%;
 }
 
 .form-container{
   position: absolute;
-  top:120px;
-  right:200px;
-
+  top:70px;
+  right:150px;
 }
+
 .form-btn{
   width: 50%;
-
 }
 
 .btn1{
   background-color: rgb(245, 244, 240);
   border: none;
 }
+
+/*
+.wave{
+  position: absolute;
+  top: 500px;
+}
+
+.interface{
+  position: relative;
+  background-color: #00BFFF;
+  height: 100%;
+  width: 100%;
+}
+
+.wave img{
+  width: 1340px;
+  height: 180px;
+} */
