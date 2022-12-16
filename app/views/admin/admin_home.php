@@ -1,19 +1,79 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/admin/admin_home.css">
-<!-- ______________________________________________________________________________________________________-->
+<?php require APPROOT.'/views/admin/admin_dashboard.php'; ?>
+<!--
+ ______________________________________________________________________________________________________-->
 
-<div class="bg">
+
+<div class="main">
+    <!--cards-->
+    <div class="cardBox">
+
+      <div class="card">
+        <div>
+          <div class="cardName">Total Income(Rs.)</div>
+          <div class="numbers">1,504</div>
+          <div class="day1">
+            <div class="circle"></div><label>last 30 days</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="cardName">Total Expenses(Rs.)</div>
+          <div class="numbers">1,504</div>
+          <div class="day2">
+            <div class="circle"></div><label>last 30 days</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="cardName">Total Profit(Rs.)</div>
+          <div class="numbers">1,504</div>
+          <div class="day3">
+            <div class="circle"></div><label>last 30 days</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="cardName">Total Milk Collection(L.)</div>
+          <div class="numbers">1,504</div>
+          <div class="day4">
+            <div class="circle"></div><label>last 30 days</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Add charts-->
+    <div class="graphBox">
+
+      <div class="box">
+        <label><center>Total Profit</center></label>
+        <canvas id="earning"></canvas>
+      </div>
+
+      <div class="box">
+        <label><center>Profit by Productions</center></label>
+        <canvas id="profit"></canvas>
+      </div>
+
+    </div>
+
+  </div>
 
 </div>
 
-<h1>Admin!</h1>
 
-<input type="button" value="Employees" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Admin/viewEmployees' ">
-<input type="button" value="Logout" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Users/logout' ">
+<!--
+<script type="text/javascript" href="<?php echo URLROOT; ?>/public/js/myChart.js">
 
-<input type="button" value="View Profile" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Users/login' ">
-<input type="button" value="Change Password" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Users/login' ">
-
-
-
+</script>
+-->
 <?php require APPROOT.'/views/include/footer.php'; ?>

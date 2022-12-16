@@ -1,11 +1,12 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/admin/addEmployees.css">
 <!-- ______________________________________________________________________________________________________-->
+<?php require APPROOT.'/views/admin/admin_dashboard.php';  ?>
 
-
-<h1>Add Employees!</h1>
+<div class="main">
 
 <div class="form-container">
+
 
 	<div class="form-header">
 		<center><h1>Add Employee</h1></center>
@@ -59,5 +60,6 @@
 
 
 	</form>
-
+</div>
+</div>
 <?php require APPROOT.'/views/include/footer.php'; ?>
