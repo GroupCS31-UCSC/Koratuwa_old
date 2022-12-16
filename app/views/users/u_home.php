@@ -4,10 +4,22 @@
 <!--_________________________________________________________________________________________ -->
 
 <div class="bg">
-  <img class="img-bg" src="<?php echo URLROOT; ?>/img/bg-copy.jpg" alt="no">
+  <div class="navbar">
+    <img class="img-logo" src="<?php echo URLROOT; ?>/img/koratuwa.png" alt="logo"></span>
+    <div class="topmenu">
+      <ul>
+        <li><a href="<?php echo URLROOT; ?>/Users/u_home">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="<?php echo URLROOT; ?>/Users/login">Login</a></li>
+        <li><a href="<?php echo URLROOT; ?>/Users/selection">Register</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- <img class="img-bg" src="<?php echo URLROOT; ?>/img/bg-copy.jpg" alt="no"> -->
 
 
-  <div class="model1">
+   <!-- <div class="model1">
     <div class="wrapper ">
       <input type="button" value="Login" class="Loginbtn" onclick="location.href='<?php echo URLROOT; ?>/Users/login' ">
       <input type="button" value="Register" class="Registerbtn" onclick="location.href='<?php echo URLROOT; ?>/Users/selection' ">
@@ -18,6 +30,6 @@
   </div>
   <div class="model2">
     <h1>Koratuwa Dairy Farm</h1>
-  </div>
+  </div> -->
 </div>
 <?php require APPROOT.'/views/include/footer.php'; ?>

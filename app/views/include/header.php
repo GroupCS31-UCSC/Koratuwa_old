@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/css/styles.css">
 
 	<!--font awesome-->
-	<!--<script src="https://kit.fontawesome.com/470e97fb9b.js" crossorigin="anonymous"></script>-->
+	<script src="https://kit.fontawesome.com/470e97fb9b.js" crossorigin="anonymous"></script>
 
 	<!--ion-icon package-->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -20,4 +20,4 @@
 
 	</script>
 </head>
-<body>
+<body style="overflow: hidden">
