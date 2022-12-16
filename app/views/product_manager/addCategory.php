@@ -1,5 +1,6 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/product_manager/addCategory.css">
+<?php require APPROOT.'/views/product_manager/pm_dashboard.php'; ?>
 <!-- ______________________________________________________________________________________________________-->
 
 
