@@ -1,3 +1,139 @@
-.bg{
-  background-color: red;
+
+/*cards*/
+.cardBox{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 30px;
+}
+.cardBox .card{
+  position: relative;
+  background: rgba(198, 191, 207, 0.3);
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+.cardBox .card .numbers{
+  position: relative;
+  font-weight: 500;
+  font-size: 2.5em;
+  color: rgb(223, 69, 155)
+}
+.cardBox .card .cardName{
+  color: rgb(135, 11, 67);
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+.cardBox .card .day1, .day2, .day3, .day4{
+  width: 100%;
+  display: flex;
+  position: relative;
+  font-size: 0.82em;
+  color: var(--black1);
+  padding-top: 10px;
+
+}
+.cardBox .card .day1 .circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+}
+.cardBox .card .day2 .circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: green;
+}
+.cardBox .card .day3 .circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: yellow;
+}
+.cardBox .card .day4 .circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: pink;
+}
+.cardBox .card label{
+  padding-left: 8px;
+}
+.cardBox .card:hover{
+  background: rgba(229, 223, 237, 0.3);
+}
+
+/*charts*/
+.graphBox{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-gap: 20px;
+  min-height: 300px;
+}
+.graphBox .box{
+  position: relative;
+  background: aliceblue;
+  padding: 20px 0 0 0;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+/*-------dropdown------*/
+.dropbtn {
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  background-color:#04086B;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  left: 100px;
+  top: 5px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: black;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size:medium;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #bbb6b6}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:active .dropbtn {
+  color: black;
 }

@@ -1,21 +1,54 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
+<?php require APPROOT.'/views/livestock_manager/livestock_dashboard.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/livestock_manager/livestock_home.css">
+
 <!-- ______________________________________________________________________________________________________-->
 
+<!--cards-->
+<div class="cardBox">
+  <!-- Total cattles -->
+  <div class="card">
+    <div>
+      <div class="cardName">Total Cattle</div>
+      <div class="numbers">200</div>
+    </div>
+  </div>
+  <div class="card">
+    <div>
+      <div class="cardName">Total Female Cattle</div>
+      <div class="numbers">150</div>
+    </div>
+  </div>
+  <div class="card">
+    <div>
+      <div class="cardName">Total Male Cattle</div>
+      <div class="numbers">30</div>
+    </div>
+  </div>
+  <div class="card">
+    <div>
+      <div class="cardName">Total Calf</div>
+      <div class="numbers">20</div>
+    </div>
+  </div>
+</div>
 
-<h1>livestock_Manager!</h1>
-<h2><?php echo $_SESSION['user_name']; ?></h2>
-
-<input type="button" value="Cattle" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Livestock_Manager/viewCattle' ">
-<input type="button" value="Add new Cattle" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Livestock_Manager/addCattle' ">
-
-<input type="button" value="Cattle Feed" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Livestock_Manager/viewFeed' ">
-<input type="button" value="Cattle Vaccination" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Livestock_Manager/viewVaccination' ">
-
-<input type="button" value="Logout" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Users/u_home' ">
-<input type="button" value="View Profile" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Users/login' ">
-<input type="button" value="Change Password" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Users/login' ">
-
+<!--Add charts-->
+<div class="graphBox">
+  <div class="box">
+  <label><center>Vaccinated cattle chart</center></label>
+    <canvas id="profit"></canvas>
+  </div>
+  <div class="box">
+    <label><center>Pregnant cattle</center></label>
+    <canvas id="profit"></canvas>
+  </div>
+</div>
 
 
+<!--
+<script type="text/javascript" href="<?php echo URLROOT; ?>/public/js/myChart.js">
+
+</script>
+-->
 <?php require APPROOT.'/views/include/footer.php'; ?>

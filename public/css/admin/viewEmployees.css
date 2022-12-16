@@ -1,0 +1,90 @@
+/*-------------table-----------------------------*/
+table {
+  position: absolute;
+  top: 100px;
+  left: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color:  white;
+}
+
+table td, #orders th {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #3cb0fd;
+    color: black;
+}
+.table_content{
+    position: relative;
+    top: 70px;
+}
+/*------tabel buttons---------------*/
+.post-control-btn1 {
+
+  border-radius: 28px;
+  box-shadow: 0px 2px 3px #666666;
+  font-family: Arial;
+  color: black;
+  font-size: 10px;
+  font: bold 20px;;
+  background: #28c728;
+  padding: 10px 18px 10px 20px;
+  text-decoration: none;
+  border-color:#28c728 ;
+}
+
+.post-control-btn1:hover {
+  background: #12fc0a;
+  text-decoration: none;
+}
+.post-control-btn2 {
+  border-radius: 28px;
+  box-shadow: 2px 2px 3px #666666;
+  font-family: Arial;
+  color: black;
+  font-size: 10px;
+  background: red;
+  padding: 10px 18px 10px 20px;
+  text-decoration: none;
+  border-color: rgb(249, 32, 97);
+}
+
+.post-control-btn2:hover {
+  background: #e35858;
+  text-decoration: none;
+}
+/*------Add employee button---------*/
+.btn {
+    position: relative;
+    width: 300px;
+    top: 500px;
+    left: 400px;
+    background: #04086B;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 1px 22px #3498db; /*#cc1a1a*/
+    -moz-box-shadow: 0px 1px 22px #3498db;
+    box-shadow: 0px 1px 22px #3498db;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+  }

@@ -4,48 +4,54 @@
 <?php flash('reg_flash'); ?>
 
 
-<div class="split left">
-	<div class="logo">
-		<img src="<?php echo URLROOT; ?>/img/koratuwa.png" alt="logo">
+<div class="interface">
+	<img class="img1" src="<?php echo URLROOT; ?>/img/1.jpg" alt="logo">
+
+	<div class="images">
+		<img class="img2" src="<?php echo URLROOT; ?>/img/milk-wave.png" alt="logo">
 	</div>
-</div>
 
-<div class="split right">
-	<div class="form-container">
 
-		<div class="form-header">
-			<center><h1>LOGIN</h1></center>
-		</div>
-		<br>
-		<p><b>Please fill the correct credentials to login.</b></p>
+	<!--	<div class="logo">
+			<img src="<?php echo URLROOT; ?>/img/koratuwa.png" alt="logo">
+		</div> -->
 
-		<form action="<?php echo URLROOT; ?>/Users/login" method="POST">
+		<div class="form-container">
 
-			<!--email-->
-			<div class="form-input-title">Email</div>
-			<input type="text" name="email" id="email" class="email" value="<?php echo $data['email']; ?>">
-			<span class="form-invalid"><?php echo $data['email_err']; ?></span>
-
-			<!--password-->
-			<div class="form-input-title">Password</div>
-			<input type="password" name="password" id="password" class="password" value="<?php echo $data['password']; ?>">
-			<span class="form-invalid"><?php echo $data['password_err']; ?></span>
-
+			<div class="form-header">
+				<center><h1>LOGIN</h1></center>
+			</div>
 			<br>
-			<input type="submit" value="Login" class="form-btn">
 
-		</form>
+			<form action="<?php echo URLROOT; ?>/Users/login" method="POST">
 
-		<div class="container" style="background-color:rgb(245, 244, 240)">
-			<input type="button" value="Forgot Password ?" class="btn1" onclick="location.href='<?php echo URLROOT; ?>/Users/login' ">
-    </div>
+				<!--email-->
+				<div class="form-input-title">Email</div>
+				<input type="text" name="email" id="email" class="email" value="<?php echo $data['email']; ?>">
+				<span class="form-invalid"><?php echo $data['email_err']; ?></span>
+				<!--password-->
+				<div class="form-input-title">Password</div>
+				<input type="password" name="password" id="password" class="password" value="<?php echo $data['password']; ?>">
+				<span class="form-invalid"><?php echo $data['password_err']; ?></span>
 
-	</div>
+				<br>
+				<input type="submit" value="Login" class="form-btn">
+
+			</form>
+
+			<div class="container">
+				<input type="button" value="Forgot Password ?" class="btn1" onclick="location.href='<?php echo URLROOT; ?>/Users/login' ">
+	    </div>
+
+		</div>
+
+
+
 </div>
 
-<div class="wave">
-	<img src="<?php echo URLROOT; ?>/img/milk-wave.png" alt="logo">
-</div>
+
+
+
 
 
 

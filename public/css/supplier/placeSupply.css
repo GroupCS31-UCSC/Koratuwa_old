@@ -1,0 +1,119 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    width: 583px;
+    background-color: black;
+}
+
+.right {
+    right: 0;
+    width: 955px;
+    background-color: white;
+}
+
+.model1 {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+
+.model2 {
+    position: absolute;
+    top: 0px;
+    text-align: left;
+}
+
+
+/*------form-------*/
+
+.form-container {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    padding: 20px;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-style: oblique;
+    border: rgba(0, 0, 0, 0.5)9;
+}
+
+.form-container input[type=text],
+input[type=date],
+input[type=text] {
+    width: 100%;
+    height: 20px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-container div {
+    text-align: left;
+}
+
+
+/* Set a style for all buttons */
+
+.form-container .form-btn1 {
+    position: relative;
+    background-color: #04086B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    left: 130px;
+    top: 10px;
+}
+
+.form-container .form-btn2 {
+    position: relative;
+    background-color: #04086B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    left: 130px;
+    top: 15px;
+}
+
+.form-container input:hover {
+    opacity: 0.8;
+}
+
+.form-container .user {
+    width: 120px;
+    height: 120px;
+}
+
+.model2 img {
+    position: relative;
+    width: 955px;
+    height: 750px;
+    margin: auto;
+    display: block;
+}
+
+.model1 .logo {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 600px;
+    height: 600px;
+}

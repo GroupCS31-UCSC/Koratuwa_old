@@ -1,0 +1,99 @@
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+.form-btn {
+    width: 20%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 75%;
+    font-size: 15px;
+    box-shadow: 0 9px #999;
+    border: none;
+}
+
+.form-btn:hover {
+    background-color: rgb(30, 30, 198);
+    color: white;
+}
+
+.form-btn:active {
+    background-color: rgb(30, 30, 198);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+table {
+    width: 95%;
+    height: 60px;
+    margin: 20px;
+    margin-top: 5px;
+    background-color: #F9F6EE;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+td,
+th {
+    width: 1500px;
+    height: 50px;
+    margin: 50px;
+    border-bottom: 1px solid silver;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+.post-control-btn1 {
+    padding: 5px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    border: none;
+}
+
+.post-control-btn1:hover {
+    background-color: #1c5a1e
+}
+
+.post-control-btn1:active {
+    background-color: #1c5a1e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.post-control-btn2 {
+    padding: 5px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    border: none;
+}
+
+.post-control-btn2:hover {
+    background-color: #a73d3d
+}
+
+.post-control-btn2:active {
+    background-color: #a73d3d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
