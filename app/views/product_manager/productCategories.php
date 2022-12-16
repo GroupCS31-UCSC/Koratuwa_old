@@ -10,7 +10,7 @@
   
 
   <!--main-->
-  <div class="main">
+  <!-- <div class="main"> -->
     
 
     
@@ -38,7 +38,7 @@
 </div>
 
 
-<input type="button" value="Add new Product Category" class="add-btn" onclick="location.href='<?php echo URLROOT; ?>/Product_Manager/addCategory' ">
+<!-- <input type="button" value="Add new Product Category" class="add-btn" onclick="location.href='<?php echo URLROOT; ?>/Product_Manager/addCategory' "> -->
 <!-- 
 <input type="button" value="Logout" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Users/logout' ">
 <input type="button" value="View Profile" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Users/login' ">

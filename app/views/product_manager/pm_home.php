@@ -8,7 +8,7 @@
   <!--Dashboard-->
   
   <!--main-->
-  <div class="main">
+  <!-- <div class="main"> -->
     
 
     <!--cards-->
@@ -71,7 +71,7 @@
 
     </div>
 
-  </div>
+  <!-- </div> -->
 
 
 
