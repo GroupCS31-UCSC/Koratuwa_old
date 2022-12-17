@@ -12,7 +12,7 @@
         <li><a href="#section1">About</a></li>
         <li><a href="#section2">Products</a></li>
         <li><a href="#section3">Contact</a></li>
-        <li><a href="<?php echo URLROOT; ?>/Users/login.php">Login</a></li>
+        <li><a href="<?php echo URLROOT; ?>/Users/login">Login</a></li>
         <li><a href="<?php echo URLROOT; ?>/Users/selection">Register</a></li>
       </ul>
     </div>
