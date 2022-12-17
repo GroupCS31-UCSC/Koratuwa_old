@@ -1,32 +1,10 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/supplier/viewSupply.css">
+<?php require APPROOT.'/views/supplier/supplier_dashboard.php'; ?>
 <!-- ______________________________________________________________________________________________________-->
 <!-- navigation bar ------>
-<div class="bg">
-  <img class="img-bg" src="<?php echo URLROOT; ?>/img/sup2.jpg" alt="no">
-  
-  <div class="topnav">
-    <form class="topnav_container" action="index.html" method="post">
-    <img class="logo" src="<?php echo URLROOT; ?>/img/koratuwa.png" alt="no">
-      <div class="logout">
-        <input type="button" value="Logout" class="btn_logout" onclick="location.href='<?php echo URLROOT; ?>/Users/logout' ">
-      </div>
-      <div class="supplier_name">
-        <form class="container3">
-          <img class="img2" src="<?php echo URLROOT; ?>/img/user2.png" alt="no">
-          <div class="dropdown">
-            <input type="button" value="Sasindu Udayanga" class="dropbtn">  
-            <div class="dropdown-content">
-              <a href="<?php echo URLROOT; ?>/Users/login">View Profile</a>
-              <a href="<?php echo URLROOT; ?>/Users/login">Change Password</a>
-            </div>
-          </div>
-    
-        </form>
-      </div>
-
-    </form>
-  </div>
+<div class="main">
+  <img class="img-bg" src="<?php echo URLROOT; ?>/img/sup_home.jpg" alt="no">
   <?php flash('placeSupply_flash') ?>
   <?php flash('dltSupOrder_flash') ?>
   <?php flash('updateSupply_flash') ?>
@@ -66,7 +44,7 @@
 
     </table>  
   </div>
-  <input type="button" value="Place New Supply" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Supplier/placeSupply' ">
 
+</div>
 </div>
 <?php require APPROOT.'/views/include/footer.php'; ?>
