@@ -8,7 +8,7 @@
     <img class="img-logo" src="<?php echo URLROOT; ?>/img/koratuwa.png" alt="logo"></span>
     <div class="topmenu">
       <ul>
-        <!-- <li><a href="<?php echo URLROOT; ?>/Users/u_home">Home</a></li> -->
+        <li><a href="<?php echo URLROOT; ?>/Users/u_home">Home</a></li>
         <li><a href="#section1">About</a></li>
         <li><a href="#section2">Products</a></li>
         <li><a href="#section3">Contact</a></li>
@@ -17,19 +17,17 @@
       </ul>
     </div>
     </div>
-
+    <!-- Pages -->
     <div class="home-img" id="section1">
       <img class="img-bg" src="<?php echo URLROOT; ?>/img/bg-copy.jpg" alt="home">
     </div>
+    <div id="section2">
+      <h1>These are our products</h1>
+    </div>
 
-
-<div id="section2">
-<h1>These are our products</h1>
-</div>
-
-<div id="section3">
-<h1>Contact Us</h1>
-</div>
+    <div id="section3">
+      <h1>Contact Us</h1>
+    </div>
 
 
 
