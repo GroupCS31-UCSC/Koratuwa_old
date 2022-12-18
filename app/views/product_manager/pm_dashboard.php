@@ -1,7 +1,7 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/product_manager/pm_dashboard.css">
 <!-- ______________________________________________________________________________________________________-->
-
+<div class="container">
 <div class="navigation">
     <ul>
       <li>
@@ -79,5 +79,6 @@
         
       </div>
     </div>
+    <!-- </div> -->
 
     <?php require APPROOT.'/views/include/footer.php'; ?>
