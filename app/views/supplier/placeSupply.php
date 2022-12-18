@@ -15,7 +15,6 @@
   		<div class="form-container">
 
 			<form action="<?php echo URLROOT; ?>/Supplier/placeSupply" method="POST">
-				<img class="user" src="<?php echo URLROOT; ?>/img/user2.png" alt="no">
 				<!--quantity-->
 				<div class="form-input-title">Supply Quantity (LITER)</div>
 				<span class="form-invalid"><?php echo $data['quantity_err']; ?></span>

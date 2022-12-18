@@ -1,3 +1,6 @@
+.main{
+    /*z-index: -2;*/
+}
 .logo {
     position: absolute;
     border-radius: 50%;
@@ -137,12 +140,12 @@
 table {
     position: absolute;
     top: 100px;
-    left: 150px;
+    left: 60px;
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
     background-color: #3498db;
-    z-index: -1;
+    /*z-index: 0;*/
 }
 
 table td,
@@ -182,11 +185,11 @@ table th {
     color: black;
     font-size: 10px;
     font: bold 20px;
-    ;
     background: #28c728;
     padding: 10px 18px 10px 20px;
     text-decoration: none;
     border-color: #28c728;
+    /*z-index: 1;*/
 }
 
 .post-control-btn1:hover {
@@ -204,6 +207,7 @@ table th {
     padding: 10px 18px 10px 20px;
     text-decoration: none;
     border-color: red;
+    z-index: 1;
 }
 
 .post-control-btn2:hover {
@@ -212,39 +216,12 @@ table th {
 }
 
 
-/*------place new order button---------*/
-
-.form-btn {
-    position: relative;
-    width: 300px;
-    top: 550px;
-    left: 600px;
-    background: #04086B;
-    -webkit-border-radius: 30;
-    -moz-border-radius: 30;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 1px 22px #3498db;
-    /*#cc1a1a*/
-    -moz-box-shadow: 0px 1px 22px #3498db;
-    box-shadow: 0px 1px 22px #3498db;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 17px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-
-.form-btn:hover {
-    background: #3cb0fd;
-    text-decoration: none;
-}
-
 
 /*-------background image-----*/
 
 .img-bg {
     position: absolute;
-    z-index: -1;
+    /*z-index: -1;*/
     top: 0px;
     left: 0;
     width: 100%;

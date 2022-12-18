@@ -1,4 +1,4 @@
-.home-btn{
+/*.home-btn{
 	background-color: #00BFFF;
 	color: aliceblue;
 	padding: 16px 20px;
@@ -16,7 +16,7 @@
 }
 
 .form-btn {
-	background-color: #00BFFF;
+	background-color:  rgba(4, 8, 107, 0.7);
 	color: aliceblue;
 	padding: 16px 20px;
 	margin: 8px 0;
@@ -27,6 +27,67 @@
 
 }
 .form-btn:hover{
-	background-color: rgb(36, 105, 110);
-	border-radius: 5px;
+	background-color: rgba(4, 8, 107, 0.7);
+	border-radius: 15px;
+}
+*/
+
+.submitBtn {
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 2px 18px #666666;
+    -moz-box-shadow: 0px 2px 18px #666666;
+    box-shadow: 0px 2px 18px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #04086B;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.submitBtn:hover {
+    background: #00BFFF;
+    text-decoration: none;
+}
+
+.deleteBtn {
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 2px 18px #666666;
+    -moz-box-shadow: 0px 2px 18px #666666;
+    box-shadow: 0px 2px 18px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: red;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.deleteBtn:hover {
+    background: #ff0066;
+    text-decoration: none;
+}
+
+.updateBtn {
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 2px 18px #666666;
+    -moz-box-shadow: 0px 2px 18px #666666;
+    box-shadow: 0px 2px 18px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #28c728;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.updateBtn:hover {
+    background: #12fc0a;
+    text-decoration: none;
 }

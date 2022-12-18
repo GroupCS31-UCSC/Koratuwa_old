@@ -19,9 +19,9 @@ window.onclick = function(event) {
 }
 </script>
 
-
+<!--apsara-->
 <script>
-//charts - Dashboard page
+//charts - Admin Dashboard page
 var profit= document.getElementById('profit').getContext('2d');
 var myChart= new Chart(profit, {
   type: 'doughnut',
@@ -59,6 +59,127 @@ var myChart= new Chart(totProfit, {
     datasets: [{
       label: 'Total profit',
       data: [320000,209000,108000,401000,120040,380000],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',,
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+      ],
+      borderWidth:0.5
+    }]
+  },
+  options: {
+    responsive: true,
+
+  }
+});
+
+</script>
+
+<!--charts - Livestock Dashboard page -->
+<script>
+var cattle= document.getElementById('cattle').getContext('2d');
+var myChart= new Chart(cattle, {
+  type: 'polarArea',
+  data: {
+    labels: ['Calf', 'Pregnant Cattles', 'Female Cattles', 'Male Cattels'],
+    datasets: [{
+      label: 'Cattls',
+      data: [20,40,150,30],
+      backgroundColor: [
+        'rgba(255, 99, 132)',,
+        'rgba(75, 192, 192)',
+        'rgba(255, 205, 86)',
+        'rgba(201, 203, 207)',
+      ],
+      borderWidth:0.5
+    }]
+  },
+  options: {
+    responsive: true,
+
+  }
+});
+
+
+var pCattle= document.getElementById('pCattle').getContext('2d');
+var myChart= new Chart(pCattle, {
+  type: 'doughnut',
+  data: {
+    labels: ['Pregnant', 'Milking Cattle'],
+    datasets: [{
+      label: 'Milking Cattle Precentages',
+      data: [90, 10],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',,
+        'rgba(255, 206, 86, 0.2)',
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(255, 206, 86, 1)',
+      ],
+      borderWidth:0.5
+    }]
+  },
+  options: {
+    responsive: true,
+
+  }
+});
+
+</script>
+
+
+
+
+
+
+<!--sasindu-->
+<script>
+//charts - Dashboard page
+var profit= document.getElementById('quality').getContext('2d');
+var myChart= new Chart(quality, {
+  type: 'doughnut',
+  data: {
+    labels: ['Good', 'Average', 'Bad'],
+    datasets: [{
+      label: 'collected milk quality',
+      data: [35,10,5],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',,
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+      ],
+      borderWidth:0.5
+    }]
+  },
+  options: {
+    responsive: true,
+
+  }
+});
+
+var totProfit= document.getElementById('collection').getContext('2d');
+var myChart= new Chart(collection, {
+  type: 'polarArea',
+  data: {
+    labels: ['collected', 'not-collected'],
+    datasets: [{
+      label: 'Total profit',
+      data: [50,5],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',,
         'rgba(255, 206, 86, 0.2)',

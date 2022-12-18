@@ -20,4 +20,4 @@
 
 	</script>
 </head>
-<body>
+<body style="overflow: hidden">

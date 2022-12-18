@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/livestock_manager/viewCattle.css">
 <!-- ______________________________________________________________________________________________________-->
 
-<h1>View Cattle!</h1>
+<!-- <h1>View Cattle!</h1> -->
 
 <?php flash('addCattle_flash') ?>
 <?php flash('updateCattle_flash') ?>
