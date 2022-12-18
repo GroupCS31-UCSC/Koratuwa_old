@@ -32,19 +32,19 @@
     <li>
       <a href="<?php echo URLROOT; ?>/Product_Manager/productCategories">
         <span class="icon"><ion-icon name="fast-food-outline"></ion-icon></span>
-        <span class="title">Production</span>
+        <span class="title">Income</span>
       </a>
     </li>
     <li>
       <a href="#">
         <span class="icon"><ion-icon name="people-circle-outline"></ion-icon></span>
-        <span class="title">Customers</span>
+        <span class="title">Special Offers</span>
       </a>
     </li>
     <li>
       <a href="#">
         <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-        <span class="title">Suppliers</span>
+        <span class="title">Feedbacks</span>
       </a>
     </li>
   </ul>
@@ -76,7 +76,18 @@
         <a href="#contact">Contact</a>
       </div>
     </div> -->
-    <ion-icon name="chevron-down-outline">
+    
+    <div class="container">
+      <div class="menu">
+        <button class="toggle-dd"><ion-icon name="chevron-down-outline"></button>
+        <ul class="list">
+          <li class="list-item" style="--delay:0.2s">Front-end</li>
+          <li class="list-item" style="--delay:0.4s">Back-end</li>
+          <li class="list-item" style="--delay:0.6s">Full-Stack</li>
+          <li class="list-item" style="--delay:0.8s">@Website_Mentor</li>
+        </ul>
+      </div>
+    </div>
 
    </div>
     </div>
