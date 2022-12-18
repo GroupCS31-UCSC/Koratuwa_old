@@ -36,12 +36,12 @@
 <!--Add charts-->
 <div class="graphBox">
   <div class="box">
-  <label><center>Vaccinated cattle chart</center></label>
-    <canvas id="profit"></canvas>
+  <label><center>Cattle</center></label>
+    <canvas id="cattle"></canvas>
   </div>
   <div class="box">
-    <label><center>Pregnant cattle</center></label>
-    <canvas id="profit"></canvas>
+    <label><center>Milking cattle</center></label>
+    <canvas id="pCattle"></canvas>
   </div>
 </div>
 
