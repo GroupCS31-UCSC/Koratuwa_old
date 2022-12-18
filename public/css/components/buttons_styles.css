@@ -35,7 +35,8 @@
 .submitBtn {
     -webkit-border-radius: 15;
     -moz-border-radius: 15;
-    border-radius: 15px;
+    border-radius: 10px;
+    /*15*/
     -webkit-box-shadow: 0px 2px 18px #666666;
     -moz-box-shadow: 0px 2px 18px #666666;
     box-shadow: 0px 2px 18px #666666;
