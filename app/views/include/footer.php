@@ -21,7 +21,7 @@ window.onclick = function(event) {
 
 
 <script>
-//charts - Dashboard page
+//charts - Admin Dashboard page
 var profit= document.getElementById('profit').getContext('2d');
 var myChart= new Chart(profit, {
   type: 'doughnut',
@@ -81,6 +81,34 @@ var myChart= new Chart(totProfit, {
 });
 
 </script>
+
+<!--charts - Dashboard page -->
+<script>
+var profit= document.getElementById('cattle').getContext('2d');
+var myChart= new Chart(cattle, {
+  type: 'polarArea',
+  data: {
+    labels: ['Calf', 'Pregnant Cattles', 'Female Cattles', 'Male Cattels'],
+    datasets: [{
+      label: 'Cattls',
+      data: [20,40,150,30],
+      backgroundColor: [
+        'rgba(255, 99, 132)',,
+        'rgba(75, 192, 192)',
+        'rgba(255, 205, 86)',
+        'rgba(201, 203, 207)',
+      ],
+      borderWidth:0.5
+    }]
+  },
+  options: {
+    responsive: true,
+
+  }
+});
+
+</script>
+
 
 
 
