@@ -1,5 +1,5 @@
 
-/*.split {
+.split {
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -9,86 +9,60 @@
 }
 
 .left {
+  z-index: -1;
   width: 40%;
   left: 0;
-  background-color: #FFFFFF;
+  background-color:#04086B;
 }
 
 .right {
   width: 60%;
   right: 0;
-  background-color: #00BFFF;
+}
+.bg-img{
+  position: absolute;
+  top: 0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
   position: absolute;
-  top: 20px;
+  top: 40px;
+  left: 17px;
 }
 
 .logo img {
-  width: 550px;
-  height: 600px;
+  width: 580px;
+  height: 640px;
   border-radius: 50%;
 }
 
 .form-container{
   position: absolute;
-  top:70px;
-  right:150px;
-}
+  top:120px;
+  right:200px;
+  background: rgba(4, 8, 107, 0.7);
 
+}
+.form-container input{
+  background: rgba(0, 191, 255, 0.39);
+}
 .form-btn{
-  width: 50%;
+  position: relative;
+  left: 35%;
+  width: 30%;
+  align-items: center;
+  background-color:  rgba(4, 8, 107);
+  border: black;
+  border-radius: 15px;
+
+  
+
 }
 
 .btn1{
-  background-color: rgb(245, 244, 240);
+  background-color:  rgba(4, 8, 107, 0.7);
   border: none;
-}
-
-
-.wave{
-  position: absolute;
-  top: 500px;
-}
-
-.interface{
-  position: relative;
-  background-color: #00BFFF;
-  height: 100%;
-  width: 100%;
-}
-
-.wave img{
-  width: 1340px;
-  height: 180px;
-} */
-
-
-body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-.interface .img1 {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: right top;
-}
-.img2{
-  position: absolute;
-  top: 56px;
-  width: 100%;
-}
-.form-container{
-  position: absolute;
-  top:100px;
-  right:375px;
 }

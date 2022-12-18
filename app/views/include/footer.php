@@ -19,7 +19,7 @@ window.onclick = function(event) {
 }
 </script>
 
-
+<!--apsara-->
 <script>
 //charts - Admin Dashboard page
 var profit= document.getElementById('profit').getContext('2d');
@@ -135,6 +135,73 @@ var myChart= new Chart(pCattle, {
 
 </script>
 
+
+
+
+
+
+<!--sasindu-->
+<script>
+//charts - Dashboard page
+var profit= document.getElementById('quality').getContext('2d');
+var myChart= new Chart(quality, {
+  type: 'doughnut',
+  data: {
+    labels: ['Good', 'Average', 'Bad'],
+    datasets: [{
+      label: 'collected milk quality',
+      data: [35,10,5],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',,
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+      ],
+      borderWidth:0.5
+    }]
+  },
+  options: {
+    responsive: true,
+
+  }
+});
+
+var totProfit= document.getElementById('collection').getContext('2d');
+var myChart= new Chart(collection, {
+  type: 'polarArea',
+  data: {
+    labels: ['collected', 'not-collected'],
+    datasets: [{
+      label: 'Total profit',
+      data: [50,5],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',,
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+      ],
+      borderWidth:0.5
+    }]
+  },
+  options: {
+    responsive: true,
+
+  }
+});
+
+</script>
 
 
 

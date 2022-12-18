@@ -8,13 +8,7 @@
 
 
 <img class="bg_image" src="<?php echo URLROOT; ?>/img/sup_home.jpg" alt="no">
-  <div class="model1">
-    <div class="container1">
-      <input type="button" class="btn1" value="Place new order" onclick="location.href='<?php echo URLROOT; ?>/Supplier/placeSupply' ">
-      <input type="button" class="btn2" value="View Supply Order" onclick="location.href='<?php echo URLROOT; ?>/Supplier/viewSupply' ">
-    </div>
-  </div> 
-</div>        	  
+    	  
 <!--  <div class="model3">
         <div class="container4">
           <label class="label1">Purchasing Price</label>
@@ -36,25 +30,22 @@
         </div>
       </div>   -->
 
-    <!--Add charts
+
     <div class="graphBox">
 
       <div class="box">
-        <label><center>Total Profit</center></label>
-        <canvas id="earning"></canvas>
+        <label><center>Quality</center></label>
+        <canvas id="quality"></canvas>
       </div>
 
       <div class="box">
-        <label><center>Profit by Productions</center></label>
-        <canvas id="profit"></canvas>
+        <label><center>Average Collection</center></label>
+        <canvas id="collection"></canvas>
       </div>
 
-      <div class="box">
-        <label><center>Profit by Productions</center></label>
-        <canvas id="profit2"></canvas>
-      </div>
 
-    </div>-->
+    </div>
+    </div> 
 
 <!--<script>
  let counterup = document.querySelectorAll(".counter_up");

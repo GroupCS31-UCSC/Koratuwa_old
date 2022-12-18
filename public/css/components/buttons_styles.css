@@ -16,7 +16,7 @@
 }
 
 .form-btn {
-	background-color: #00BFFF;
+	background-color:  rgba(4, 8, 107, 0.7);
 	color: aliceblue;
 	padding: 16px 20px;
 	margin: 8px 0;
@@ -27,8 +27,8 @@
 
 }
 .form-btn:hover{
-	background-color: rgb(36, 105, 110);
-	border-radius: 5px;
+	background-color: rgba(4, 8, 107, 0.7);
+	border-radius: 15px;
 }
 */
 

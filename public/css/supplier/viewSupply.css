@@ -1,5 +1,5 @@
 .main{
-    z-index: -2;
+    /*z-index: -2;*/
 }
 .logo {
     position: absolute;
@@ -145,7 +145,7 @@ table {
     border-collapse: collapse;
     width: 90%;
     background-color: #3498db;
-    z-index: 0;
+    /*z-index: 0;*/
 }
 
 table td,
@@ -185,11 +185,11 @@ table th {
     color: black;
     font-size: 10px;
     font: bold 20px;
-    ;
     background: #28c728;
     padding: 10px 18px 10px 20px;
     text-decoration: none;
     border-color: #28c728;
+    /*z-index: 1;*/
 }
 
 .post-control-btn1:hover {
@@ -207,6 +207,7 @@ table th {
     padding: 10px 18px 10px 20px;
     text-decoration: none;
     border-color: red;
+    z-index: 1;
 }
 
 .post-control-btn2:hover {
@@ -220,7 +221,7 @@ table th {
 
 .img-bg {
     position: absolute;
-    z-index: -1;
+    /*z-index: -1;*/
     top: 0px;
     left: 0;
     width: 100%;
