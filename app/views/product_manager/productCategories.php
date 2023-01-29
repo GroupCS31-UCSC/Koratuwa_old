@@ -1,38 +1,48 @@
-<?php require APPROOT.'/views/include/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/product_manager/productCategories.css">
+<?php require APPROOT.'/views/include/header.php'; ?>
 <?php require APPROOT.'/views/product_manager/pm_dashboard.php'; ?>
+
+
 <!-- ______________________________________________________________________________________________________-->
 
 
-
-  <div class="container">
-  <!--Dashboard-->
-  
-
-  <!--main-->
-  <!-- <div class="main"> -->
-    
-
-    
-    <!-- <h1>View categories!</h1> -->
-
-<?php flash('addCategory_flash') ?>
-<?php flash('deleteCategory_flash') ?>
-
 <!-- <h2><?php echo $_SESSION['user_id']; ?></h2> -->
-<input type="button" value="Add new Product Category" class="add-btn" onclick="location.href='<?php echo URLROOT; ?>/Product_Manager/addCategory' "> 
-<div class="gallery">
+
+
+<div class="btnWrapper">
+  <input type="button" value="Add new Product Category" class="addBtn" onclick="location.href='<?php echo URLROOT; ?>/Product_Manager/addCategory' "> 
+</div>
+
+
+<!-- <div class="gallery">
 <div class="content">
 
 
 </div>
 
-</div>
+</div> -->
+
+
+<div class="cardWrapper">
 
   <?php foreach ($data['categoryView'] as $category) : ?>
-    <a href="<?php echo URLROOT?>/Product_Manager/viewCategory/<?php echo $category->product_id ?>"><button class="post-control-btn1"><?php echo $category->product_name ?></button></a>
-  <?php endforeach; ?>
+    <!-- <a href="<?php echo URLROOT?>/Product_Manager/viewCategory/<?php echo $category->product_id ?>">
+    <button class="products"><?php echo $category->product_name ?></button></a> -->
 
+
+    <a href="<?php echo URLROOT?>/Product_Manager/viewCategory/<?php echo $category->product_id ?>" class="card" >
+      <div class="img">
+        <img src="<?php echo UPLOADS . $category->image ?>" width='200' height='200'>
+      </div>
+      <div class="cardContent">
+        <p><?php echo $category->product_name ?></p>
+      </div>
+  </a>
+
+    
+    <?php endforeach; ?>
+    
+  </div>
   </div>
 
 </div>

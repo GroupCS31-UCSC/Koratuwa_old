@@ -4,23 +4,15 @@
 <!-- ______________________________________________________________________________________________________-->
 
 
-
-  <!--Dashboard-->
-  
-  <!--main-->
-  <!-- <div class="main"> -->
-    
-
-    <!--cards-->
-    <div class="cardBox">
-
-      <div class="card">
-        <div>
-          <div class="cardName">Total Products</div>
-          <div class="numbers">6</div>
-          <!-- <div class="day1">
+<!--cards-->
+<div class="cardBox">
+  <div class="card">
+    <div>
+      <div class="cardName">Total Products</div>
+        <div class="numbers">6</div>
+          <div class="day1">
             <div class="circle"></div><label>last 30 days</label>
-          </div> -->
+          </div> 
         </div>
       </div>
 
@@ -61,12 +53,12 @@
 
       <div class="box">
         <label><center>Total Production</center></label>
-        <canvas id="earning"></canvas>
+        <canvas id="ch1"></canvas>
       </div>
 
       <div class="box">
-        <label><center>Profit by Productions</center></label>
-        <canvas id="profit"></canvas>
+        <label><center>Number of Productions</center></label>
+        <canvas id="ch2"></canvas>
       </div>
 
     </div>

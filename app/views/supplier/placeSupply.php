@@ -1,21 +1,17 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/supplier/placeSupply.css">
+<?php require APPROOT.'/views/supplier/supplier_dashboard.php'; ?>
 <!-- ______________________________________________________________________________________________________-->
 
 
-<div class="split left">
-  	<div class="model1">
-	  <img class="logo" src="<?php echo URLROOT; ?>/img/koratuwa.png" alt="no">
-  	</div>
-</div>
+<div class="form-container">
+<div class="form-header">
+		<center><h1>Place Supply Order</h1></center>
+	</div>
+	<br>
 
-<div class="split right">
-	<div class="model2">
-		<img class="sup1" src="<?php echo URLROOT; ?>/img/sup1.jpg" alt="no">
-  		<div class="form-container">
 
 			<form action="<?php echo URLROOT; ?>/Supplier/placeSupply" method="POST">
-				<img class="user" src="<?php echo URLROOT; ?>/img/user2.png" alt="no">
 				<!--quantity-->
 				<div class="form-input-title">Supply Quantity (LITER)</div>
 				<span class="form-invalid"><?php echo $data['quantity_err']; ?></span>
@@ -32,15 +28,7 @@
 				<input type="text" name="address" id="address" class="address" value="<?php echo $data['address']; ?>">
 
 				<br>
-				<input type="submit" value="Submit" class="form-btn1"><br>
-				
-
-
+				<input type="submit" value="Submit" class="submitBtn"><br>
 			</form>
-			<input type="button" value="Cancel" class="form-btn2" onclick="location.href='<?php echo URLROOT; ?>/Supplier/viewSupply' ">
-		</div>	
-
-	</div>
-</div>	
 
 <?php require APPROOT.'/views/include/footer.php'; ?>

@@ -115,8 +115,8 @@
 
     public function updateEmployees($data)
     {
-      $this->db->query('UPDATE employee SET employee_id=:id, employee_name= :name, nic= :nic, dob= :dob, contact_number=:tp_num,gender=:gender,address=:address,employment=:employment  WHERE email= :email');
-      $this->db->bind(':id', $data['id']);
+      $this->db->query('UPDATE employee SET employee_name= :name, nic= :nic, dob= :dob, contact_number=:tp_num,gender=:gender,address=:address,employment=:employment  WHERE email= :email');
+      // $this->db->bind(':id', $data['id']);
       $this->db->bind(':name', $data['name']);
       $this->db->bind(':nic', $data['nic']);
 			$this->db->bind(':dob', $data['dob']);
@@ -130,8 +130,8 @@
       //execute
       if($this->db->execute())
       {
-        $this->db->query('UPDATE user SET user_id=:id, name= :name, nic= :nic, contact_number=:tp_num, address=:address, user_type=:employment  WHERE email= :email');
-        $this->db->bind(':id', $data['id']);
+        $this->db->query('UPDATE user SET name= :name, nic= :nic, contact_number=:tp_num, address=:address, user_type=:employment  WHERE email= :email');
+        // $this->db->bind(':id', $data['id']);
         $this->db->bind(':name', $data['name']);
         $this->db->bind(':nic', $data['nic']);
         $this->db->bind(':tp_num', $data['tp_num']);

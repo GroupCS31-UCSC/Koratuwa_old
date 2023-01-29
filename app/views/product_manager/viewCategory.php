@@ -4,18 +4,19 @@
 <!-- ______________________________________________________________________________________________________-->
 
 
-<h1>View product details!</h1>
-
+<?php flash('addCategory_flash') ?>
 <?php flash('updateCategory_flash') ?>
+<?php flash('deleteCategory_flash') ?>
 
 
-<h2><?php echo $_SESSION['user_id']; ?></h2>
+
 <table>
   <tr>
     <th>Ingredients</th>
     <th>Estimated Cost</th>
     <th>Price</th>
     <th>Image</th>
+    <th>Action</th>
   </tr>
 
   <?php foreach ($data['category'] as $cat) : ?>
@@ -25,12 +26,12 @@
     <td><?php echo $cat->ingredients; ?></td>
     <td><?php echo $cat->unit_cost; ?></td>
     <td><?php echo $cat->unit_price; ?></td>
-    <td><?php echo $cat->image; ?></td>
-    <td><img src="<?=$cat->image;?>" width='200' height='200' accept="image/png, image/jpeg"></td>
+
+    <td><img src="<?php echo UPLOADS . $cat->image ?>" width='200' height='200'></td>
     <td>
-        <div class="post -control-btns">
-          <a href="<?php echo URLROOT?>/Product_Manager/updateCategory/<?php echo $cat->product_id ?>"><button class="post-control-btn1">UPDATE</button></a>
-          <a href="<?php echo URLROOT?>/Product_Manager/deleteCategory/<?php echo $cat->product_id ?>"><button class="post-control-btn2">DELETE</button></a>
+        <div class="table-btns">
+          <a href="<?php echo URLROOT?>/Product_Manager/updateCategory/<?php echo $cat->product_id ?>"><button class="updateBtn">UPDATE</button></a>
+          <a href="<?php echo URLROOT?>/Product_Manager/deleteCategory/<?php echo $cat->product_id ?>"><button class="deleteBtn">DELETE</button></a>
         </div>
     </td>
   </tr><br>

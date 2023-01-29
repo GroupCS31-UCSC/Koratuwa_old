@@ -1,5 +1,4 @@
 /* Content */
-
 .cardBox {
     position: relative;
     width: 100%;
@@ -35,14 +34,12 @@
 
 
 /*charts*/
-
 .graphBox {
     position: relative;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    grid-gap: 20px;
+    grid-template-columns: 2fr 2fr;
     min-height: 300px;
 }
 
@@ -50,14 +47,13 @@
     position: relative;
     background: aliceblue;
     padding: 20px 0 0 0;
-    width: 100%;
+    width: 98%;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
 
 
 /*make it responsive design*/
-
 @media (max-width: 991px) {
     .graphBox {
         grid-template-columns: 1fr;

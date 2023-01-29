@@ -1,10 +1,13 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
-<link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/livestock_manager/livestock_dashboard.css">
+<link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/styles.css">
 
 
 <div class="container">
   <!--Dashboard-->
-  <div class="navigation">
+  <div class="navigation active">
+    <!-- <div class="back">
+      <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+    </div> -->
     <ul>
       <li>
         <a href="#">
@@ -41,7 +44,7 @@
   </div>
 
   <!--main-->
-    <div class="main">
+    <div class="main active">
     <!--top nav bar-->
         <div class="topnavbar">
             <div class="toggle">
@@ -65,17 +68,14 @@
                                 <a href="#" class="sub-menu-link">
                                     <i class="fa-solid fa-user"></i>
                                     <p>View Profile</p>
-                                    <span>></span>
                                 </a>   
                                 <a href="#" class="sub-menu-link">
                                     <i class="fa-solid fa-lock"></i>
                                     <p>Change Password</p>
-                                    <span>></span>
                                 </a>
                                 <a href="<?php echo URLROOT; ?>/Users/u_home" class="sub-menu-link">
                                     <i class="fa-solid fa-right-from-bracket"></i>
                                     <p>Log out</p>
-                                    <span>></span>
                                 </a>
                             </div>
                         </div>

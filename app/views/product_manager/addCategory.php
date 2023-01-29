@@ -4,7 +4,7 @@
 <!-- ______________________________________________________________________________________________________-->
 
 
-<h1>Add new Category!</h1>
+
 
 
 <div class="form-container">
@@ -14,7 +14,7 @@
 	</div>
 	<br>
 
-	<form action="<?php echo URLROOT; ?>/Product_Manager/addCategory" method="POST">
+	<form action="<?php echo URLROOT; ?>/Product_Manager/addCategory" method="POST" enctype="multipart/form-data">
 
 		<!--category name-->
 		<div class="form-input-title">Product Name</div>
@@ -39,13 +39,14 @@
     <!--image-->
     <div class="form-input-title">Image</div>
     <span class="form-invalid"><?php echo $data['image_err']; ?></span>
-    <input type="file" name="image" id="image" class="image" accept="image/png, image/jpeg" value="<?php echo $data['image']; ?>"><br>
+    <input type="file" name="image" id="image" class="image" value="<?php echo $data['image']; ?>"><br>
 
 
 		<br>
-		<input type="submit" value="Submit" class="form-btn">
+		<input type="submit" value="Submit" class="submitBtn">
 
 
 	</form>
+</div>
 
 <?php require APPROOT.'/views/include/footer.php'; ?>

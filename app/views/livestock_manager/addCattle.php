@@ -5,21 +5,21 @@
 
 
 <div class="form-container">
-
 	<div class="form-header">
-		<center><h1>Add New Cattle!</h1></center>
+		<center><h1>Add New Cattle</h1></center>
 	</div>
 	<br>
-
 	<form action="<?php echo URLROOT; ?>/Livestock_Manager/addCattle" method="POST">
-
 		<!--breed-->
 		<div class="form-input-title">Cow Breed</div>
     <span class="form-invalid"><?php echo $data['breed_err']; ?></span>
     <select class="breed" name="breed" id="breed" value="<?php echo $data['breed']; ?>">
-      <option value="American">american</option>
-      <option value="local">local</option>
-      <option value="other">other</option>
+      <option value="Select">Select</option>
+      <option value="Jersey">Jersey (British breed)</option>
+      <option value="Persian">Persian (Newzealend breed)</option>
+      <option value="Sahiwal">Sahiwal (Indian breed)</option>
+      <option value="Girlandor">Girlandor (Indian breed(new))</option>
+      <option value="Other">Other</option>
     </select>
 
     <!--weight-->
@@ -31,6 +31,7 @@
 		<div class="form-input-title">Gender</div>
     <span class="form-invalid"><?php echo $data['gender_err']; ?></span>
     <select class="gender" name="gender" id="gender" value="<?php echo $data['gender']; ?>">
+      <option value="Select">Select</option>
       <option value="Male">Male</option>
       <option value="Female">Female</option>
     </select>
@@ -46,9 +47,8 @@
     <input type="text" name="health" id="health" class="health" value="<?php echo $data['health']; ?>">
 
 		<br>
-		<input type="submit" value="Submit" class="form-btn">
+		<input type="submit" value="Submit" class="submitBtn">
+  </form>
 
-
-	</form>
 
 <?php require APPROOT.'/views/include/footer.php'; ?>

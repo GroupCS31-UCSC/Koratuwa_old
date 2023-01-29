@@ -16,7 +16,7 @@
 			<center><h1>CUSTOMER SIGNUP</h1></center>
 		</div>
 		<br>
-		<p><b>Please fill the form to Register.</b></p>
+		
 
 		<form action="<?php echo URLROOT; ?>/Users/registerCustomer" method="POST">
 
@@ -32,7 +32,7 @@
 
 	    <!--contact no-->
 	    <div class="form-input-title">Contact Number</div>
-			<input type="text" name="tp_num" id="tp_num" class="tp_num" value="<?php echo $data['tp_num']; ?>">
+			<input type="number" name="tp_num" id="tp_num" class="tp_num" value="<?php echo $data['tp_num']; ?>">
 			<span class="form-invalid"><?php echo $data['tp_num_err']; ?></span>
 
 	    <!--address-->
@@ -42,7 +42,7 @@
 
 			<!--email-->
 			<div class="form-input-title">Email</div>
-			<input type="text" name="email" id="email" class="email" value="<?php echo $data['email']; ?>">
+			<input type="email" name="email" id="email" class="email" value="<?php echo $data['email']; ?>">
 			<span class="form-invalid"><?php echo $data['email_err']; ?></span>
 
 			<!--password-->
@@ -56,7 +56,7 @@
 			<span class="form-invalid"><?php echo $data['confirm_password_err']; ?></span>
 
 			<br>
-			<input type="submit" value="Register" class="form-btn">
+			<input type="submit" value="Register" class="submitBtn">
 
 
 		</form>

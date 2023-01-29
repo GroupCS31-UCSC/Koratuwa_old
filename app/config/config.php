@@ -13,8 +13,12 @@
 	//URLROOT
 	 define('URLROOT', 'http://localhost/koratuwa');
 
+	define('UPLOADS', URLROOT . '/public/uploads/');
+
 	//WEBSITE NAME
 	 define('SITENAME', 'koratuwa');
 
+	//PUBROOT
+	// define('PUBROOT', dirname(dirname(dirname(__FILE__))).'\public');
 
  ?>

@@ -9,6 +9,7 @@
   display: grid;
   height: 100%;
 }
+
 /* navigation bar */  
 .navbar{
   position: fixed;
@@ -69,6 +70,7 @@
 .topmenu ul li a:hover{
   color: silver;
 }
+
 /* home section */
 #section1{
   height: 800px;
@@ -88,7 +90,7 @@
 }
 
 #section1 h1{
-  color: black;
+  color:#04086B;
   position: absolute;
   top: 40vh;
   left: 25vw;
@@ -116,8 +118,10 @@
 }
 
 
+
+
 .img-ab{
-  height: 500px;
+  height: 400px;
   width: 600px;
 margin-top:120px;
 }
@@ -132,9 +136,12 @@ margin-top: 30px;
   color: white;
   font-size: 25px;
   text-transform: capitalize;
-  margin: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
   letter-spacing: 2px;
   justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 span{
@@ -145,10 +152,11 @@ span{
  
   color: black;
   font-size: 18px;
- line-height: 20px;
+  line-height: 20px;
   margin: 30px;
   letter-spacing: 3px;
-  
+  font-family: 'Poppins', sans-serif;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   padding: 20px;
   border-radius: 10px;
   width: 100%;
@@ -327,7 +335,7 @@ button{
   "form map";
   grid-gap: 20px;
   padding: 20px;
-  background-color: #00bfff;
+  
 }
 .box h3{
  font-size: 20px;

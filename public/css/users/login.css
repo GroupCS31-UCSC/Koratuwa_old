@@ -1,5 +1,5 @@
 
-/*.split {
+.split {
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -22,23 +22,26 @@
 
 .logo {
   position: absolute;
-  top: 20px;
+  top: 40px;
+  left: 17px;
 }
 
 .logo img {
-  width: 550px;
-  height: 600px;
+  width: 580px;
+  height: 640px;
   border-radius: 50%;
 }
 
 .form-container{
   position: absolute;
-  top:70px;
-  right:150px;
-}
+  top:120px;
+  right:200px;
+  border-radius: 10px;
 
+}
 .form-btn{
   width: 50%;
+
 }
 
 .btn1{
@@ -46,49 +49,62 @@
   border: none;
 }
 
-
-.wave{
-  position: absolute;
-  top: 500px;
+/* .submitBtn {
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+ 
+  
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #04086B;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 150px;
+  margin: 10px;
 }
 
-.interface{
-  position: relative;
-  background-color: #00BFFF;
-  height: 100%;
-  width: 100%;
-}
-
-.wave img{
-  width: 1340px;
-  height: 180px;
+.submitBtn:hover {
+  background: #00BFFF;
+  text-decoration: none;
 } */
 
+.submitBtn{
+  display:block;
+  width:100%; 
+  height:50px;
+  border-radius: 25px;
+  margin:1rem 0;
+  font-size:1.2rem;
+  outline:none;
+  border:none;
+  background-color: #0A2558;
+  /* background-image: linear-gradient(to right, #0A2558, #0e3276, #0A2558); */
+  cursor:pointer;
+  color:#fff;
+  text-transform: uppercase;
+  background-size: 200%;
+  transition:0.5s;
+}
 
-body{
-  margin: 0;
-  padding: 0;
-  height: 100%;
+.submitBtn:hover{
+  /* background-position: right; */
+  background-color: #00BFFF;
+  color: white;
 }
-.interface .img1 {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: right top;
+
+.fpw{
+  display:block;
+  text-align: right;
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition:0.3s;
+  border: none;
 }
-.img2{
-  position: absolute;
-  top: 56px;
-  width: 100%;
-}
-.form-container{
-  position: absolute;
-  top:100px;
-  right:375px;
+
+.fpw:hover{
+  color:#0A2558;
+  cursor: pointer;
 }

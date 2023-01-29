@@ -1,25 +1,23 @@
 <?php require APPROOT.'/views/include/header.php'; ?>
 <?php require APPROOT.'/views/livestock_manager/livestock_dashboard.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/livestock_manager/viewCattle.css">
-<!-- ______________________________________________________________________________________________________-->
 
-<h1>View Cattle!</h1>
 
 <?php flash('addCattle_flash') ?>
 <?php flash('updateCattle_flash') ?>
 <?php flash('deleteCattle_flash') ?>
 
-<input type="button" value="Add New Cattle" class="form-btn" onclick="location.href='<?php echo URLROOT; ?>/Livestock_Manager/addCattle' ">
+<input type="button" value="Add New Cattle" class="addBtn" onclick="location.href='<?php echo URLROOT; ?>/Livestock_Manager/addCattle' ">
 
 <table>
   <tr>
     <th>COW ID</th>
     <th>Breed</th>
     <th>Gender</th>
-    <th>Weight</th>
+    <th>Weight (Kg) </th>
     <!-- <th>Age</th> -->
     <th>Health</th>
-    <th>Average Milking(Literes per day)</th>
+    <!-- <th>Average Milking(Literes per day)</th> -->
     <th>Associated Livestock Manager</th>
     <th>Action</th>
   </tr>
@@ -39,12 +37,12 @@
     ?>
     </td> -->
     <td><?php echo $cattle->health; ?></td>
-    <td><?php echo '12.5'; ?></td>
+    <!-- <td><?php echo '35-40L'; ?></td> -->
     <td><?php echo $cattle->employee_id; ?></td>
     <td>
-        <div class="post-control-btns">
-          <a href="<?php echo URLROOT?>/Livestock_Manager/updateCattle/<?php echo $cattle->cow_id ?>"><button class="post-control-btn1">EDIT</button></a>
-          <a href="<?php echo URLROOT?>/Livestock_Manager/deleteCattle/<?php echo $cattle->cow_id ?>"><button class="post-control-btn2">DELETE</button></a>
+        <div class="table-btns">
+          <a href="<?php echo URLROOT?>/Livestock_Manager/updateCattle/<?php echo $cattle->cow_id ?>"><button class="updateBtn">UPDATE</button></a>
+          <a href="<?php echo URLROOT?>/Livestock_Manager/deleteCattle/<?php echo $cattle->cow_id ?>"><button class="deleteBtn">DELETE</button></a>
         </div>
     </td>
   </tr><br>

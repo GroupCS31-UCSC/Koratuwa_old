@@ -18,6 +18,41 @@
           if($_SERVER['REQUEST_METHOD'] == 'POST')
           {
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+           
+
+            // if(!empty($_FILES["image"]["name"])) { 
+            //   // Get file info 
+            //   $fileName = basename($_FILES["image"]["name"]); 
+            //   $fileType = pathinfo($fileName, PATHINFO_EXTENSION); 
+               
+            //   // Allow certain file formats 
+            //   $allowTypes = array('jpg','png','jpeg','gif'); 
+            //   if(in_array($fileType, $allowTypes)){ 
+            //       $image = $_FILES['image']['tmp_name']; 
+            //       $imgContent = addslashes(file_get_contents($image)); 
+            //   }
+            // }
+
+              
+            $file_name = $_FILES['image']['name'];
+            $file_size = $_FILES['image']['size'];
+            $tmp_name = $_FILES['image']['tmp_name'];
+            $error = $_FILES['image']['error'];
+
+            if ($error == 0) {
+
+              $fileType = pathinfo($file_name, PATHINFO_EXTENSION);
+              $fileType_lc = strtolower($fileType);
+      
+              $allowedFileTypes = array("jpg", "jpeg", "png");
+      
+              if (in_array($fileType, $allowedFileTypes)) {
+      
+                  $new_img_name = uniqid("IMG-", true) . '.' . $fileType_lc;
+                  $img_upload_path = APPROOT . '/../public/img/Uploads/' . $new_img_name;
+                  move_uploaded_file($tmp_name, $img_upload_path);                  
+              }
+          } 
 
             $data=[
               'pId'=>'',
@@ -25,8 +60,7 @@
               'cost'=>trim($_POST['cost']),
               'price'=>trim($_POST['price']),
               'ingredients'=>trim($_POST['ingredients']),
-              'image'=>trim($_POST['image']),
-
+              'image'=> $new_img_name,
               'name_err'=>'',
               'cost_err'=>'',
               'price_err'=>'',
@@ -41,6 +75,7 @@
             if (empty($data['ingredients']))        { $data['ingredients_err'] = '*' ; }
             if (empty($data['image']))        { $data['image_err'] = '*' ; }
 
+            
 
             //if no errors
             if(empty($data['name_err']) && empty($data['cost_err']) && empty($data['price_err']) && empty($data['ingredients_err']) && empty($data['image_err']) )
@@ -91,14 +126,32 @@
           if($_SERVER['REQUEST_METHOD'] == 'POST')
           {
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+            $file_name = $_FILES['image']['name'];
+            $file_size = $_FILES['image']['size'];
+            $tmp_name = $_FILES['image']['tmp_name'];
+            $error = $_FILES['image']['error'];
 
+            if ($error == 0) {
+
+              $fileType = pathinfo($file_name, PATHINFO_EXTENSION);
+              $fileType_lc = strtolower($fileType);
+      
+              $allowedFileTypes = array("jpg", "jpeg", "png");
+      
+              if (in_array($fileType, $allowedFileTypes)) {
+      
+                  $new_img_name = uniqid("IMG-", true) . '.' . $fileType_lc;
+                  $img_upload_path = APPROOT . '/../public/img/Uploads/' . $new_img_name;
+                  move_uploaded_file($tmp_name, $img_upload_path);                  
+              }
+          }
             $data=[
               'pId'=>$pId,
               'name'=>trim($_POST['name']),
               'cost'=>trim($_POST['cost']),
               'price'=>trim($_POST['price']),
               'ingredients'=>trim($_POST['ingredients']),
-              'image'=>trim($_POST['image']),
+              'image'=>$new_img_name,
 
               'name_err'=>'',
               'cost_err'=>'',

@@ -2,7 +2,6 @@
 <?php require APPROOT.'/views/livestock_manager/livestock_dashboard.php'; ?>
 <link rel="stylesheet" type="text/css" href="<?php echo URLROOT; ?>/public/css/livestock_manager/livestock_home.css">
 
-<!-- ______________________________________________________________________________________________________-->
 
 <!--cards-->
 <div class="cardBox">
@@ -36,19 +35,14 @@
 <!--Add charts-->
 <div class="graphBox">
   <div class="box">
-  <label><center>Vaccinated cattle chart</center></label>
-    <canvas id="profit"></canvas>
+  <label><center>Cattle</center></label>
+    <canvas id="cattle"></canvas>
   </div>
   <div class="box">
-    <label><center>Pregnant cattle</center></label>
-    <canvas id="profit"></canvas>
+    <label><center>Milking cattle</center></label>
+    <canvas id="pCattle"></canvas>
   </div>
 </div>
 
 
-<!--
-<script type="text/javascript" href="<?php echo URLROOT; ?>/public/js/myChart.js">
-
-</script>
--->
 <?php require APPROOT.'/views/include/footer.php'; ?>

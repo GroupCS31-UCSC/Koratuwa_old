@@ -40,6 +40,8 @@
             if (empty($data['gender']))     { $data['gender_err'] = '*' ; }
             if (empty($data['dob']))     { $data['dob_err'] = '*' ; }
             if (empty($data['health']))        { $data['health_err'] = '*' ; }
+            if ($data['gender']=='Select')  { $data['gender_err'] = '*' ; }
+            if ($data['breed']=='Select')  { $data['breed_err'] = '*' ; }
 
             //if no errors
             if(empty($data['breed_err']) && empty($data['weight_err']) && empty($data['gender_err']) && empty($data['dob_err']) && empty($data['health_err']) )

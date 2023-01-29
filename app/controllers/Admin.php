@@ -6,7 +6,7 @@
         {
           $this->adminModel = $this->model('Admin_Model');
         }
-
+        
         public function landingPage()
         {
           $data = [];
@@ -58,9 +58,11 @@
             if (empty($data['nic']))        { $data['nic_err'] = '*' ;  }
             if (empty($data['tp_num']))     { $data['tp_num_err'] = '*' ; }
             if (empty($data['gender']))     { $data['gender_err'] = '*' ; }
+            if ($data['gender']=='Select')  { $data['gender_err'] = '*' ; }
             if (empty($data['dob']))        { $data['dob_err'] = '*' ; }
             if (empty($data['address']))    { $data['address_err'] = '*' ; }
             if (empty($data['employment'])) { $data['employment_err'] = '*' ; }
+            if ($data['employment']=='Select')  { $data['employment_err'] = '*' ; }
 
             if (empty($data['email']))
             {
@@ -136,7 +138,7 @@
 
             $data = [
               //email eka change krnna den nee
-              'id' => trim($_POST['id']),
+              // 'id' => trim($_POST['id']),
               'name' => trim($_POST['name']),
               'nic' => trim($_POST['nic']),
               'tp_num' => trim($_POST['tp_num']),
@@ -147,7 +149,7 @@
               'email' => $email,
 
 
-              'id_err' => '',
+              // 'id_err' => '',
               'name_err' => '',
               'nic_err' => '',
               'tp_num_err' => '',
@@ -157,14 +159,16 @@
               'employment_err' => '',
 
             ];
-            if (empty($data['id']))         { $data['id_err'] = '*' ; }
+            // if (empty($data['id']))         { $data['id_err'] = '*' ; }
             if (empty($data['name']))       { $data['name_err'] = '*' ; }
             if (empty($data['nic']))        { $data['nic_err'] = '*' ;  }
             if (empty($data['tp_num']))     { $data['tp_num_err'] = '*' ; }
             if (empty($data['gender']))     { $data['gender_err'] = '*' ; }
+            if ($data['gender']=='Select')  { $data['gender_err'] = '*' ; }
             if (empty($data['dob']))        { $data['dob_err'] = '*' ; }
             if (empty($data['address']))    { $data['address_err'] = '*' ; }
             if (empty($data['employment'])) { $data['employment_err'] = '*' ; }
+            if ($data['employment']=='Select')  { $data['employment_err'] = '*' ; }
 
             if(empty($data['id_err'])&&empty($data['name_err'])&&empty($data['nic_err'])&&empty($data['tp_num_err'])&&empty($data['gender_err'])&&empty($data['dob_err'])&&empty($data['address_err'])&&empty($data['employment_err']) )
             {
@@ -191,7 +195,7 @@
             $emp = $this->adminModel->getEmpByEmail($email);
             //$emp  is a data set that retrieved from db
             $data = [
-              'id' => $emp->employee_id,
+              // 'id' => $emp->employee_id,
               'name' => $emp->employee_name,
               'nic' => $emp->nic,
               'tp_num' => $emp->contact_number,
@@ -201,7 +205,7 @@
               'email' => $emp->email,
               'employment' => $emp->employment,
 
-              'id_err' => '',
+              // 'id_err' => '',
               'name_err' => '',
               'nic_err' => '',
               'tp_num_err' => '',
